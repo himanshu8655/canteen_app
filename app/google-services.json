@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "406181069625",
+    "firebase_url": "https://nmimscanteen.firebaseio.com",
+    "project_id": "nmimscanteen",
+    "storage_bucket": "nmimscanteen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406181069625:android:7fc1f97dfd1522317d9ee8",
+        "android_client_info": {
+          "package_name": "com.example.nmims_canteen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406181069625-ki6ur325n7ncbh2o15i1p7jqklpm1pa6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nmims_canteen",
+            "certificate_hash": "6a60f6ef2190eb7c31356961f0d40ac246ddf785"
+          }
+        },
+        {
+          "client_id": "406181069625-7u782osiko6h0kini26ihl4f2tdt5cok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH9ecFxWUQVV-VVQCz3hUHk5QR2n0wd24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406181069625-7u782osiko6h0kini26ihl4f2tdt5cok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

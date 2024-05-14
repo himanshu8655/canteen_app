@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    tools:context=".FirstScreen">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="#D9BFA0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/name_db"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_white"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:text=" "
+                android:background="@drawable/textview"
+                android:layout_marginLeft="180dp" />
+
+            <Spinner
+                android:id="@+id/sp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/name_db"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="68dp"
+        android:layout_height="82dp"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/cv1"
+        android:layout_marginTop="595dp"
+        app:cardBackgroundColor="#D9BFA0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/Game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#D9BFA0"
+                android:src="@drawable/ic_videogame_24dp" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Game"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-7dp"
+                android:text="Game" />
+
+            <ImageButton
+                android:id="@+id/Canteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_toRightOf="@+id/Game"
+                android:background="#D9BFA0"
+                android:src="@drawable/ic_local_dining_24dp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Canteen"
+                android:layout_marginLeft="162dp"
+                android:layout_marginTop="-7dp"
+                android:text="Menu" />
+
+            <ImageButton
+                android:id="@+id/Wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_toRightOf="@+id/Canteen"
+                android:background="#D9BFA0"
+                android:src="@drawable/ic_account_balance_wallet_black_24dp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Wallet"
+                android:layout_marginLeft="297dp"
+                android:layout_marginTop="-7dp"
+                android:text="Wallet" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="576dp"
+        android:layout_below="@+id/cv1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</RelativeLayout>

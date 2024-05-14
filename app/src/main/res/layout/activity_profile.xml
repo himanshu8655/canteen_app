@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+
+    <TextView
+        android:id="@+id/qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="My Profile"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#D9BFA0"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="71dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="22dp"
+                android:text="Username"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="350dp"
+                android:layout_height="50sp"
+                android:layout_margin="7dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_person_white"
+                android:layout_marginBottom="392dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="22dp"
+                android:text="Phone Number"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phone_no"
+                android:layout_width="350dp"
+                android:layout_height="50sp"
+                android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="392dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="22dp"
+                android:text="Email ID"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="350dp"
+                android:layout_height="50sp"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="392dp"
+                android:inputType="none"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:layout_gravity="center"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="71dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="22dp"
+                android:text="Password"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password"
+
+                android:layout_width="350dp"
+                android:layout_height="50sp"
+                android:layout_margin="7dp"
+                android:layout_marginBottom="392dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:inputType="none"
+                android:layout_gravity="center"
+                android:text="**********"
+                android:maxLines="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/db_button"
+        android:layout_marginTop="564sp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="20sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="CONFIRM CHANGES"/>
+
+</RelativeLayout>

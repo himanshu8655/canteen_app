@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    tools:context=".Canteen">
+
+
+    <TextView
+        android:id="@+id/paisa"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#CD7F32"
+        android:ems="10"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_below="@+id/paisa"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:verticalScrollbarPosition="right">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/coffee" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/img1"
+                        android:text="Piccolo Latte"
+                        android:textColor="#262626"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img1"
+                        android:text="In Signature Coffees"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv11"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img1"
+                        android:text="₹ 100"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/coffee_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv11"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/coffee_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/coffee_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:backGroundColor="@color/elegantbutton"
+                            app:textColor="#000000"
+                            app:textSize="6sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card1"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/tea" />
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tapree Special Tea "
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img2"/>
+
+                    <TextView
+                        android:id="@+id/tv21"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img2"
+                        android:text="In Signature Tea"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 50"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img2"
+                        android:layout_below="@+id/tv21"/>
+
+                    <LinearLayout
+                        android:id="@+id/tea_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv21"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/tea_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/tea_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card2"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/burger" />
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crispy Veg Burger"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img3"/>
+
+                    <TextView
+                        android:id="@+id/tv31"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img3"
+                        android:text="In Burgers"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 180"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img3"
+                        android:layout_below="@+id/tv31"/>
+
+                    <LinearLayout
+                        android:id="@+id/burger_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv31"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/burger_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/burger_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card3"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/donuts" />
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Classic Donuts"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img4"/>
+
+                    <TextView
+                        android:id="@+id/tv41"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img4"
+                        android:text="Dipped In Dark Chocolate"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 80"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img4"
+                        android:layout_below="@+id/tv41"/>
+
+                    <LinearLayout
+                        android:id="@+id/donuts_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv41"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/donuts_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/donuts_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card4"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/samosa" />
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Samosa"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img5"/>
+
+                    <TextView
+                        android:id="@+id/tv51"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img5"
+                        android:text="Deep Fried"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv51"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img5"
+                        android:text="₹ 25"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:id="@+id/samosa_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv51"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/samosa_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/samosa_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card5"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/vada" />
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vada Pav"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img6"/>
+
+                    <TextView
+                        android:id="@+id/tv61"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img6"
+                        android:text="Mumbai Special"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 20"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img6"
+                        android:layout_below="@+id/tv61"/>
+                    <LinearLayout
+                        android:id="@+id/vada_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv61"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/vada_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp"
+                            android:background="@drawable/button"/>
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/vada_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card6"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bhel" />
+                    <TextView
+                        android:id="@+id/tv7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bhel Puri"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img7"/>
+
+                    <TextView
+                        android:id="@+id/tv71"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img7"
+                        android:text="Mumbai Special"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 30"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img7"
+                        android:layout_below="@+id/tv71"/>
+                    <LinearLayout
+                        android:id="@+id/bhel_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv71"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/bhel_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp"
+                            android:background="@drawable/button" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/bhel_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card7"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/cheese" />
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cheese Balls"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img8"/>
+
+                    <TextView
+                        android:id="@+id/tv81"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img8"
+                        android:text="Bites"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv82"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 60"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img8"
+                        android:layout_below="@+id/tv81"/>
+
+                    <LinearLayout
+                        android:id="@+id/cheese_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv81"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cheese_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp"
+                            android:background="@drawable/button" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/cheese_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card8"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/manchurian" />
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manchurian"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img9"/>
+
+                    <TextView
+                        android:id="@+id/tv91"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv9"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img9"
+                        android:text="In Chinese"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv92"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 80"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img9"
+                        android:layout_below="@+id/tv91"/>
+
+                    <LinearLayout
+                        android:id="@+id/manchurian_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv91"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/manchurian_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp"
+                            android:background="@drawable/button" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/manchurian_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card9"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img10"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/frankie" />
+                    <TextView
+                        android:id="@+id/tv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Frankie"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img10"/>
+
+                    <TextView
+                        android:id="@+id/tv101"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv10"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img10"
+                        android:text="In Rolls"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv102"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 40"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img10"
+                        android:layout_below="@+id/tv101"/>
+
+                    <LinearLayout
+                        android:id="@+id/frankie_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv101"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/frankie_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp"
+                            android:background="@drawable/button" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/frankie_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card10"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img11"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/dosa" />
+                    <TextView
+                        android:id="@+id/tv111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dosa"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img11"/>
+
+                    <TextView
+                        android:id="@+id/tv112"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv111"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img11"
+                        android:text="South Indian"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv113"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 50"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img11"
+                        android:layout_below="@+id/tv112"/>
+
+                    <LinearLayout
+                        android:id="@+id/dosa_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv112"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/dosa_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp"
+                            android:background="@drawable/button" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/dosa_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card11"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img12"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/pizza" />
+                    <TextView
+                        android:id="@+id/tv122"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img12"/>
+
+                    <TextView
+                        android:id="@+id/tv121"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv122"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img12"
+                        android:text="In Italian"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv123"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 90"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img12"
+                        android:layout_below="@+id/tv121"/>
+
+                    <LinearLayout
+                        android:id="@+id/pizza_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv121"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/pizza_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp"
+                            android:background="@drawable/button" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/pizza_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/card12"
+                app:contentPadding="2dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle">
+
+                    <ImageView
+                        android:id="@+id/img13"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/dessert" />
+                    <TextView
+                        android:id="@+id/tv13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sizzling Brownie"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img13"/>
+
+                    <TextView
+                        android:id="@+id/tv131"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv13"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/img13"
+                        android:text="In Desserts"
+                        android:textColor="#262626"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv132"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 40"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textSize="15sp"
+                        android:textColor="#262626"
+                        android:layout_toRightOf="@+id/img13"
+                        android:layout_below="@+id/tv131"/>
+
+                    <LinearLayout
+                        android:id="@+id/dessert_l"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/tv131"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/dessert_a"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:drawableRight="@drawable/ic_add_black_24dp"
+                            android:text="Add"
+                            android:textSize="14sp"
+                            android:background="@drawable/button" />
+
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:id="@+id/dessert_e"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            app:textColor="#000000"
+                            app:textSize="6sp"
+                            app:backGroundColor="@color/elegantbutton" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Total Amount: ₹"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/sv"/>
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/sv"
+        android:layout_toRightOf="@+id/symbol"/>
+
+    <in.shadowfax.proswipebutton.ProSwipeButton
+        android:id="@+id/btn_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        app:btn_text="Proceed to Pay"
+        android:textStyle="bold"
+        app:text_color="#262626"
+        app:bg_color="@color/elegantbutton"
+        app:arrow_color="@color/cardBackgroundColor"
+        android:layout_below="@id/symbol"/>
+
+</RelativeLayout>
